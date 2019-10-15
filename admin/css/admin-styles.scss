@@ -1,0 +1,58 @@
+//CUSTOM WIDGET ON WP ADMIN DASHBOARD
+.CG-ADMIN-WIDGET {
+  // border: 1rem dotted red;
+  background-color: orangered;
+  padding: 1rem;
+  box-shadow: 3px 3px 8px gray;
+  border-radius: 20px;
+
+  .title-widget {
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .image-widget {
+    width: 100%;
+    margin-bottom: 1rem;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .text-widget {
+    color: white;
+    text-align: center;
+  }
+}
+
+// WELCOME PANEL ON WP ADMIN DASHBOARD
+#CG-ADMIN-WELCOME {
+  a {
+    img {
+      &:hover {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .welcome-panel-column {
+    margin-bottom: 1rem;
+    .welcome-panel-content {
+      // border: 4px dotted blue;
+      background: #e3e3e3;
+      padding: 1rem;
+    }
+  }
+}
+
+#welcome-panel {
+  .welcome-panel-close {
+    // border: 1rem dotted red;
+    padding-top: 2rem;
+
+    &::before {
+      top: 30px;
+    }
+  }
+}

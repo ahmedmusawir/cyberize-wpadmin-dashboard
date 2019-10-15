@@ -1,0 +1,42 @@
+.CG-ADMIN-WIDGET {
+  background-color: orangered;
+  padding: 1rem;
+  box-shadow: 3px 3px 8px gray;
+  border-radius: 20px;
+}
+.CG-ADMIN-WIDGET .title-widget {
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.CG-ADMIN-WIDGET .image-widget {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.CG-ADMIN-WIDGET .image-widget:hover {
+  opacity: 0.5;
+}
+.CG-ADMIN-WIDGET .text-widget {
+  color: white;
+  text-align: center;
+}
+
+#CG-ADMIN-WELCOME a img:hover {
+  opacity: 0.3;
+}
+#CG-ADMIN-WELCOME .welcome-panel-column {
+  margin-bottom: 1rem;
+}
+#CG-ADMIN-WELCOME .welcome-panel-column .welcome-panel-content {
+  background: #e3e3e3;
+  padding: 1rem;
+}
+
+#welcome-panel .welcome-panel-close {
+  padding-top: 2rem;
+}
+#welcome-panel .welcome-panel-close::before {
+  top: 30px;
+}
+
+/*# sourceMappingURL=admin-styles.css.map */
