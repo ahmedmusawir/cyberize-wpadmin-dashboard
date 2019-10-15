@@ -14,20 +14,20 @@ function cyberize_custom_logo()
 
 <style>
 body {
-  background-color: darkslategray !important;
+  background-color: <?php the_field('admin_login_screen_background_color', option) ?> !important;
 }
 
 #login h1 a {
-  background-image: url('/wp-content/uploads/2019/10/moose-oragebg.png');
-  background-size: 150px 150px;
+  background-image: url(<?php the_field('admin_login_screen_custom_logo', option) ?>);
+  /* background-size: 150px 150px;
   height: 150px;
-  width: 150px;
+  width: 150px; */
   border-radius: 20px;
 }
 
 .login #backtoblog a,
 .login #nav a {
-  color: white !important;
+  color: <?php the_field('admin_login_screen_text_color', option) ?> !important;
 }
 </style>
 

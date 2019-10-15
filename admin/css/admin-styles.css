@@ -39,4 +39,22 @@
   top: 30px;
 }
 
+/** 
+ * ACF WINDOW STYLES
+ * PRETTY COOL
+ */
+#poststuff {
+  background-color: #e3e3e3;
+  padding-top: 2rem !important;
+  padding-bottom: 1rem;
+}
+#poststuff .acf-postbox {
+  border: 1px solid gray;
+  box-shadow: 2px 2px 8px gray;
+}
+#poststuff .acf-postbox .hndle.ui-sortable-handle {
+  background-color: orangered;
+  color: white;
+}
+
 /*# sourceMappingURL=admin-styles.css.map */

@@ -2,7 +2,7 @@
 
 
 /*
-WP DASHBOARD WELCOME WIDGET AND CUSTOM WIDGET ACF PHP CODE
+* WP DASHBOARD WELCOME WIDGET AND CUSTOM WIDGET ACF PHP CODE
 */
 
 // If this file is called directly, abort.
@@ -10,6 +10,7 @@ if (!defined('WPINC')) {
 	die;
 }
 
+// ADMIN DASHBORAD 
 if (function_exists('acf_add_local_field_group')) :
 
 	acf_add_local_field_group(array(
@@ -451,6 +452,89 @@ if (function_exists('acf_add_local_field_group')) :
 				'prepend' => '',
 				'append' => '',
 				'maxlength' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'options_page',
+					'operator' => '==',
+					'value' => 'cg-branding',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+	));
+
+endif;
+
+// ADMIN LOGIN SCREEN
+if (function_exists('acf_add_local_field_group')) :
+
+	acf_add_local_field_group(array(
+		'key' => 'group_5da54fc8cebee',
+		'title' => 'ADMIN LOGIN SCREEN',
+		'fields' => array(
+			array(
+				'key' => 'field_5da54ff5cf965',
+				'label' => 'ADMIN LOGIN SCREEN CUSTOM LOGO',
+				'name' => 'admin_login_screen_custom_logo',
+				'type' => 'image',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '40',
+					'class' => '',
+					'id' => '',
+				),
+				'return_format' => 'url',
+				'preview_size' => 'medium',
+				'library' => 'all',
+				'min_width' => '',
+				'min_height' => '',
+				'min_size' => '',
+				'max_width' => '',
+				'max_height' => '',
+				'max_size' => '',
+				'mime_types' => '',
+			),
+			array(
+				'key' => 'field_5da550a5cf966',
+				'label' => 'ADMIN LOGIN SCREEN BACKGROUND COLOR',
+				'name' => 'admin_login_screen_background_color',
+				'type' => 'color_picker',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '30',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+			),
+			array(
+				'key' => 'field_5da550c7cf967',
+				'label' => 'ADMIN LOGIN SCREEN TEXT COLOR',
+				'name' => 'admin_login_screen_text_color',
+				'type' => 'color_picker',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '30',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
 			),
 		),
 		'location' => array(
